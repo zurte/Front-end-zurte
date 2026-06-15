@@ -1,0 +1,6 @@
+===Relatorio de Equipamentos===
+
+Patrimônio: 1001 | Equipamento: Notebook Dell Vostro | Setor: TI | Prioridade: Alta
+Patrimônio: 1002 | Equipamento: Impressora HP Laserjet | Setor: Recepção | Prioridade: Média
+Patrimônio: 1003 | Equipamento: Monitor LG 24' | Setor: Financeiro | Prioridade: Baixa
+Patrimônio: 1004 | Equipamento: Headset Logitech | Setor: Suporte | Prioridade: Alta

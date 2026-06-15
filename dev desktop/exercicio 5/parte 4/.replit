@@ -1,0 +1,11 @@
+run = "python3 main.py"
+
+[nix]
+channel = "stable-23_11"
+
+[env]
+DISPLAY = ":0"
+
+[vnc]
+env = { DISPLAY = ":1" }
+command = ["python3", "main.py"]

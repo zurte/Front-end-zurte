@@ -1,0 +1,28 @@
+===Relatorio de Equipamentos===
+
+[
+     {
+          "patrimonio": 1001,
+          "setor": "TI",
+          "equipamento": "Notebook Dell Vostro",
+          "prioridade": "Alta"
+     },
+     {
+          "patrimonio": 1002,
+          "setor": "Recepção",
+          "equipamento": "Impressora HP Laserjet",
+          "prioridade": "Média"
+     },
+     {
+          "patrimonio": 1003,
+          "setor": "Financeiro",
+          "equipamento": "Monitor LG 24'",
+          "prioridade": "Baixa"
+     },
+     {
+          "patrimonio": 1004,
+          "setor": "Suporte",
+          "equipamento": "Headset Logitech",
+          "prioridade": "Alta"
+     }
+]
