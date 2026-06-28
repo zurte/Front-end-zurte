@@ -1,0 +1,72 @@
+html{
+	background: white;
+	/*background-image: url("bg-biscoito.avif");*/
+}
+
+.top-barr{
+	display:flex;
+	position:relative;
+	background:linear-gradient(90deg,#57022f,black);
+	height:15%;
+	width:100%;
+	border-bottom-right-radius:100px;
+	border-top-right-radius:100px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	justify-content:right;
+	align-items:center;
+
+}
+.lista-menu{
+	display:flex;
+	position:relative;
+	list-style:none;
+	margin:20px;
+	padding:0;
+	gap: 30px;
+	
+}
+.lista-menu li{
+	color:white;
+}
+.menu{
+	color:white;
+	background-color:transparent;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	border-color:#57022f;
+	width:110%;
+}
+.barra-de-pesquisa{
+	display:flex;
+	position:relative;
+	right:10%;
+	top:10%;
+	width:50%;
+	height:100%;
+	
+}
+.barra-de-pesquisa input{
+	color:#ffffff;
+	width:100%;
+	height:40%;
+	background:#010029;
+	align-self:center;
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px;
+}
+.barra-de-pesquisa button{
+	height:40%;
+	color:#ffffff;
+	background:#010029;
+	align-self:center;
+	border-top-right-radius:0;
+	border-bottom-right-radius:20px;
+}
+#logo{
+	
+	position: absolute;
+	width:20%;
+	left:0;
+	top:0;
+}
