@@ -1,0 +1,1 @@
+A diferença do "div" e o HTML semântico são que o div é um container genérico para conteúdo de fluxo, que não apresenta nada. Podendo ser utilizado para agrupamentos de elementos para fins de estilos ou porque compartilham valores de atributo. O HTML semântico ele utiliza de tags específicas que comuniucam o propósito do conteúdo. Sendo assim cada elemento possui um papel claro.
