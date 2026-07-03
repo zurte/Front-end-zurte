@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+header{
+    display:grid;
+    height:30vh;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    background-color: transparent;
+    border-bottom: 2px solid;
+    border-color:rgb(255, 255, 255);
+}
+header h2{
+    position: relative;
+    right:15%;
+}
+header h3{
+    position: relative;
+    left:5%;
+}
+nav ul{
+    display:flex;
+    position:relative;
+    list-style:none;
+    justify-content: center;
+    margin:0%;
+    background-color: gray;
+    padding-right:13%;
+    border-bottom:2px solid;
+    border-color:white;
+}
+ul li{
+    margin:30px;
+}
