@@ -1,39 +1,111 @@
 body{
     background-color: black;
 }
-header{
+#inicio{
     display:grid;
     height:30vh;
     justify-content: center;
     align-items:center;
     color:white;
-    background-color: transparent;
-    border-bottom: 2px solid;
-    border-color:rgb(255, 255, 255);
+    background-color: rgb(100,100,100);
+    margin-top:0%;
+    border:2px solid;
+    border-color: white;
+    text-align: center;
+    text-shadow: 0 0 40px white;
+    
 }
-#inicio h2{
+/*#inicio h2{
     position: relative;
     right:15%;
 }
 #inicio h3{
     position: relative;
     left:5%;
-}
+}*/
 #sobre_noís{
     color:white;
-    background-color: transparent;
+    background-color: rgb(10,10,10);
+    text-align:center;
+    box-shadow: 0 0 10px rgb(50,50,50);
+    border-radius: 20px;
 }
+
+#top-barr{
+    margin-top:-26px;
+}
+
 #top-barr ul{
     display:flex;
     position:relative;
+    background-color: rgb(100,100,100);
     list-style:none;
     justify-content: center;
-    margin:0%;
-    background-color: gray;
     padding-right:13%;
-    border-bottom:2px solid;
+    border:2px solid;
     border-color:white;
+    border-top-color: gray;
+    border-radius: 0 0 40px 0;
+    
 }
 #top-barr li{
-    margin:30px;
+    position:relative;
+    left:40%;
+    margin:50px;
+    color:rgb(100,0,0);
+}
+#filmes{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:100vw;
+}
+.capas{
+    width:20vw;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: gray;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:10px;
+    box-shadow: 0 0 10px silver;
+}
+.capas img{
+    display:flex;
+    justify-self: center;
+    width:20vw;
+    padding: 20px;
+}
+.capas legend{
+    color:white;
+}
+.play{
+    color:white;
+    background-color: blueviolet;
+    width:50px;
+    height:50px;
+    border-radius: 100%;;
+}
+
+.play img{
+    display:flex;
+    position:relative;
+    bottom:13px;
+    left:2px;
+    width:32px;
+    justify-self: center;
+}
+
+#contato{
+    display:flex;
+    background-image: url(play.png);
+    background-color:rgb(10,10,10);
+    border:1px solid;
+    color:white;
+    margin-bottom:0%;
+}
+
+#contato p{
+    margin:20px;
 }
