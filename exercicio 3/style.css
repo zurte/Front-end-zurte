@@ -70,7 +70,13 @@ body{
     text-align: center;
     margin:10px;
     box-shadow: 0 0 10px silver;
+
+    transition: box-shadow 0.3s ease;
+    transition: border-radius 0.8s ease;
 }
+.capas:hover{
+    box-shadow: 0 0 15px rgb(0,0,100);
+    border-radius: 50px;}
 .capas img{
     display:flex;
     justify-self: center;
@@ -85,7 +91,14 @@ body{
     background-color: blueviolet;
     width:50px;
     height:50px;
-    border-radius: 100%;;
+    border-radius: 100%;
+
+    transition: background-color 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+.play:hover{
+    background-color: rgb(133, 133, 209);
+    box-shadow:0 0 15px silver;
 }
 
 .play img{
