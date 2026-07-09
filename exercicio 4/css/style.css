@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(50, 50, 130);
+    overflow-x: hidden;
+    width:100%;
+    
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35vw;
+    color:black;
+    margin: -10px 0 0 -10px;
+    background-color: rgb(50, 50, 50);
+}
+.topo li{
+    color:black;
+
+}
+#menu{
+    display:flex ;
+    list-style:none;
+    gap: 10rem;
+    border-bottom: 3px solid; 
+    border-bottom-left-radius: 30px; 
+}
+#menu button{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 10px 10px 0 0;
+
+    transition: box-shadow 0.5s,
+                color 0.5s;
+    
+}
+#menu button:hover{
+    box-shadow: 0 -7px 10px white;
+    color:white;
+}
+#corpo{
+    display:flex;
+    flex-wrap: wrap;
+    gap:5vw;
+    padding-left: 5vw;
+    background-color: rgb(50, 50, 130);
+    margin: 0 0 0 -10px;
+}
+.card-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    width:25vw;
+    height:75vh;
+    color:azure;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px 0 0 15px;
+    box-shadow: 0 0 20px black;
+
+
+    transition: box-shadow 0.5s,
+                border-radius 0.5s
+}
+.card-box:hover{
+    box-shadow: 0 0 20px rgb(130,50,50);
+    border-radius: 0;
+}
+.card-box img{
+    width:20vw;
+}
+.card-box button{
+    font-size: 20px;
+    text-align: center;
+    width:100px;
+    margin: 10px 30rem 10px 30rem;
+    color:white;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: rgb(130,50,50);
+    border-radius: 10px;
+    
+    transition: box-shadow 0.5s,
+    border-radius 0.5s;
+
+}
+.card-box button:hover{
+    box-shadow: 0 0 20px rgb(130,50,50);
+    border-radius: 30px;
+}
+
