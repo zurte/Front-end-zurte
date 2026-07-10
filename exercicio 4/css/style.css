@@ -64,12 +64,10 @@ body{
     box-shadow: 0 0 20px black;
 
 
-    transition: box-shadow 0.5s,
-                border-radius 0.5s;
+    transition: box-shadow 0.5s;
 }
 .card-box:hover{
     box-shadow: 0 0 20px rgb(130,50,50);
-    border-radius: 0;
 }
 .card-box img{
     width:200px;
@@ -92,6 +90,5 @@ body{
 }
 .card-box button:hover{
     box-shadow: 0 0 20px rgb(130,50,50);
-    border-radius: 30px;
 }
 
