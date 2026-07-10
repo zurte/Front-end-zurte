@@ -85,7 +85,6 @@ body{
     border-radius: 12px;
     
     transition: box-shadow 0.5s,
-    border-radius 0.5s;
 
 }
 .card-box button:hover{
