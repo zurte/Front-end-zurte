@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35vw;
+    gap: 35%;
     color:black;
     margin: -10px 0 0 -10px;
     background-color: rgb(50, 50, 50);
@@ -26,7 +26,8 @@ body{
 #menu{
     display:flex ;
     list-style:none;
-    gap: 10rem;
+    width:450px;
+    gap: 30%;
     border-bottom: 3px solid; 
     border-bottom-left-radius: 30px; 
 }
@@ -46,8 +47,8 @@ body{
 #corpo{
     display:flex;
     flex-wrap: wrap;
-    gap:5vw;
-    padding-left: 5vw;
+    gap:5%;
+    padding-left: 5%;
     background-color: rgb(50, 50, 130);
     margin: 0 0 0 -10px;
 }
@@ -71,7 +72,8 @@ body{
     border-radius: 0;
 }
 .card-box img{
-    width:20vw;
+    width:200px;
+    height:150px;
 }
 .card-box button{
     font-size: 20px;
@@ -82,7 +84,7 @@ body{
     background-color: transparent;
     border: 2px solid;
     border-color: rgb(130,50,50);
-    border-radius: 10px;
+    border-radius: 12px;
     
     transition: box-shadow 0.5s,
     border-radius 0.5s;
