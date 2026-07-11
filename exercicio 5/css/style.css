@@ -91,3 +91,9 @@ body{
     box-shadow: 0 0 20px rgb(130,50,50);
 }
 
+/*Descrição cesio*/
+
+.desc_cesio{
+    text-align: right;
+    color:black;
+}
