@@ -42,7 +42,7 @@ body{
     display:flex ;
     list-style:none;
     width:450px;
-    gap: 30%;
+    gap: 15%;
     border-bottom: 3px solid; 
     border-bottom-left-radius: 30px; 
     
