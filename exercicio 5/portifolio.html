@@ -27,7 +27,7 @@
             <h1 class="titulo"><b><i>Portifolio</i></b></h1>
             <h2 class="titulo"><b><i>Kaique Lopes da Silva</i></b> | <b><i>Kauan (insira seu sobre nome aqui!!!)</i></b></h2>
         </section>
-        <section id="objetivo">
+        <section class="objetivo">
             <h3>Objetivo do Projeto</h3>
             <p>Esse é o prototipo de um site desenvolvido para a atividade proposta pelo professor emmanuel, a ideia central do projeto era
             simular um site de vendas, mas, obviamente como uma piada, esse site só vende coisas absurdar como cesio-137
@@ -35,8 +35,10 @@
             lugares<br> que vendem drogas). Todo o site é claramente um grande shitpost que fizemos para que o processo de aprendizagem fosse mais divertido.
             Não usem drogas e nem comprem cesio galera, faz mal...a anvisa adverte. 
             </p>
+        </section>
+        <section class="tecnalogias">
             <h3>Tecnalogias Usadas</h3>
-            <ul id="lista-tecnologias">
+            <ul>
                 <li>VScode- Usado para escrever os códigos do nosso projeto</li>
                 <li>VScode/LiveService - Usado para testar e acompanhar o desenvolvimento da interface do nosso site</li>
                 <li>y2tube - usado para baixar arquivos .mp3 para nosso site</li>
@@ -44,6 +46,16 @@
                 <li>GitHub - Onde armazenamos nosso código para que podessemos acessalos de forma remota e trabalharmos em equipe</li>
             </ul>
         </section>
+        <section class="mibile-first">
+            <h3>Decisões Mobile first</h3>
+            <p>Para que nosso site fosse legivel em telas pequenas, como a de tablets e celulares, nos decidimos mudar as fonts
+                e a organização dos elementos no <b>display:grid</b> com <b>grid-template-columns</b>. Definimos que se a resolução no telas
+                for de até 768px, o <b>Media queries</b> fara com que o grid tenha apenas 1 coluna, já se ele tiver até 1024px
+                terá duas colunas, mais que isso será sempre 3 colunas. Quando a tela estiver com um resolução de pelo menos 1024px ou menos,
+                o <b>navbar</b> sera resumido "dentro" de um menu hamburger.
+            </p>
+        </section>
+        
     </main>
 </body>
 </html>
