@@ -91,70 +91,116 @@ body{
     box-shadow: 0 0 20px rgb(173, 243, 255);
 }
 
+/*Descrição Cesio*/
+
+.corpo_C{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-end;
+}
+
+.desc_cesio{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.preco_cesio{
+    display: flex;
+    position: relative;
+    bottom: -150px;
+    right: -450px;
+    font-size: 45px;
+    
+}
+
 /*Descrição oregano*/
+
+.corpo_O{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-end;
+}
 
 .desc_oregano{
     display: flex;
-    position: relative;
-    top: -200px;
-    right: -1000px;
-    max-width: 400px;
+    flex-direction: column-reverse;
 }
 
 .preco_oregano{
     display: flex;
     position: relative;
-    top: -200px;
-    right: -1000px;
+    bottom: -150px;
+    right: -450px;
+    font-size: 45px;
 }
 
 /*Descrição Manual*/
 
-.desc_manual{
+.corpo_M{
     display: flex;
-    position: relative;
-    top: -200px;
-    right: -1000px;
-    max-width: 400px;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-end;
+
+}
+
+.desc_manual{
+   display: flex;
+   flex-direction: column-reverse;
 }
 
 .preco_manual{
     display: flex;
     position: relative;
-    top: -200px;
-    right: -1000px;
+    bottom: -150px;
+    right: -450px;
+    font-size: 25px;
+
 }
 
 /*Descrição Totem*/
 
-.desc_totem{
+.corpo_T{
     display: flex;
-    position: relative;
-    top: -200px;
-    right: -1000px;
-    max-width: 400px;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-end;
+}
+
+.desc_totem{
+   display: flex;
+   flex-direction: column-reverse;
 }
 
 .preco_totem{
     display: flex;
     position: relative;
-    top: -200px;
-    right: -1000px;
+    bottom: -150px;
+    right: -450px;
+    font-size: 45px;
 }
 
 /*Descrição Ps6*/
 
+.corpo_PS{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-end;
+
+}
 .desc_ps6{
     display: flex;
-    position: relative;
-    top: -200px;
-    right: -1000px;
-    max-width: 400px;
+    flex-direction: column-reverse;
 }
 
 .preco_ps6{
     display: flex;
     position: relative;
-    top: -200px;
-    right: -1000px;
+    bottom: -150px;
+    right: -250px;
+    font-size: 25px;
 }
