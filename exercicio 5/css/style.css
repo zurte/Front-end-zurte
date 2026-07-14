@@ -57,7 +57,7 @@ body{
 }
 .menu button:hover{
     box-shadow: 0 -7px 10px white;
-    color:white;
+    color:#000;
 }
 #corpo{
     display:grid;
@@ -220,25 +220,78 @@ body{
         transform: scale(1);
     }
     .menu{
-        position: relative;
-        left:-132%;
-        top:25px;
+        position: absolute;
+        left:50%;
+        top:50%;
         margin:0;
         padding:0;
         text-align: center;
-        border:0;
-        border-radius: 0;
-        background-color: #969EA7;
+        border:2px solid #000;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+        color:#fff;
         width:10rem;
+        transform: translate(-50%,-50%);
     }
     .menu button{
+        color:black;
         border-radius:0;
         width:100%;
     }
     .navbar{
         display: inline-block;
         position: absolute;
-        left:30%;
+        top:15%;
+        left:10%;
+        text-align: center;
+        padding: 16px;
+        transform: scale(0);
+    }
+    .navbar .menu{
+        display:block;
+    }
+}
+/*ATIVANDO A RESPONSIVIDADE PARA TABLET*/
+@media (min-width: 769px) and (max-width: 1024px){
+    #corpo{
+        justify-content: center;
+        grid-template-columns: repeat(2,380px);
+    }
+
+    .hamburger{
+        display:block;
+        cursor:pointer;
+        position:absolute;
+        left:10px;
+        top:20px;
+    }
+    #checkbox_toggle:checked ~ .navbar{
+        transform: scale(1);
+    }
+    .menu{
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:0;
+        padding:0;
+        text-align: center;
+        border:2px solid #000;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+        color:#fff;
+        width:10rem;
+        transform: translate(-50%,-50%);
+    }
+    .menu button{
+        color:black;
+        border-radius:0;
+        width:100%;
+    }
+    .navbar{
+        display: inline-block;
+        position: absolute;
+        top:15%;
+        left:10%;
         text-align: center;
         padding: 16px;
         transform: scale(0);
