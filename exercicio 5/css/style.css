@@ -1,14 +1,14 @@
 @font-face {
     font-family:"fonte-insana";
     src: url('../assets/Simpsonfont.ttf') format('opentype'); 
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family:"kaique";
     src: url('../assets/DOCALLISME ON STREET.ttf') format('opentype'); 
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 #kaique{
