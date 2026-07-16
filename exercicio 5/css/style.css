@@ -129,128 +129,13 @@ body{
     box-shadow: 0 0 20px rgb(173, 243, 255);
 }
 
-/*Descrição Cesio*/
-
-.corpo_C{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
+.corpo_produto{
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
-
-.desc_cesio{
-    display: flex;
-    flex-direction: column-reverse;
-    
-}
-
-.preco_cesio{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-    
-}
-
-/*Descrição oregano*/
-
-.corpo_O{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-}
-
-.desc_oregano{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.preco_oregano{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-}
-
-/*Descrição Manual*/
-
-.corpo_M{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-
-}
-
-.desc_manual{
-   display: flex;
-   flex-direction: column-reverse;
-}
-
-.preco_manual{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 25px;
-
-}
-
-/*Descrição Totem*/
-
-.corpo_T{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-}
-
-.desc_totem{
-   display: flex;
-   flex-direction: column-reverse;
-}
-
-.preco_totem{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-}
-
-/*Descrição Ps6*/
-
-.corpo_PS{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-
-}
-.desc_ps6{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.preco_ps6{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -250px;
-    font-size: 25px;
-}
-
-#checkbox_toggle{
-    display:none;
-}
-
-.hamburger{
-    display:none;
-    font-size: 24px;
-    user-select:none;
+.desc_produto{
+    max-width: 400px;
 }
 
 /*Portifolio cabeçalho*/

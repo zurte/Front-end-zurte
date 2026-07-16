@@ -2,7 +2,9 @@
     font-family:Georgia, 'Times New Roman', Times, serif ;
     src: url();
 }
-
+html{
+    background-color: #969EA7;
+}
 body{
     background-color: #E5E8F5;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,8 +49,8 @@ body{
 #corpo{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap:5%;
-    padding-left: 5%;
     background-color: #969EA7;
     margin: 0 0 0 -10px;
 }
@@ -91,116 +93,31 @@ body{
     box-shadow: 0 0 20px rgb(173, 243, 255);
 }
 
-/*Descrição Cesio*/
-
-.corpo_C{
+.corpo_produto{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
+    background-color: #969EA7;
+    width:100%;
 }
 
-.desc_cesio{
-    display: flex;
+.img_produto{
+    width:800px;
+    height:415px;
+    border:2px black solid;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+.desc_produto{
+    display:flex;
     flex-direction: column-reverse;
+    max-width: 400px;
+    text-align: center;
+    font-size: 22px;
+    border:2px black solid;
+    border-radius: 10px;
+    margin-top: 10%;
     
 }
-
-.preco_cesio{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-    
-}
-
-/*Descrição oregano*/
-
-.corpo_O{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-}
-
-.desc_oregano{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.preco_oregano{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-}
-
-/*Descrição Manual*/
-
-.corpo_M{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-
-}
-
-.desc_manual{
-   display: flex;
-   flex-direction: column-reverse;
-}
-
-.preco_manual{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 25px;
-
-}
-
-/*Descrição Totem*/
-
-.corpo_T{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-}
-
-.desc_totem{
-   display: flex;
-   flex-direction: column-reverse;
-}
-
-.preco_totem{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -450px;
-    font-size: 45px;
-}
-
-/*Descrição Ps6*/
-
-.corpo_PS{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    align-items: flex-end;
-
-}
-.desc_ps6{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.preco_ps6{
-    display: flex;
-    position: relative;
-    bottom: -150px;
-    right: -250px;
-    font-size: 25px;
+.preco{
+    color:red;
 }
