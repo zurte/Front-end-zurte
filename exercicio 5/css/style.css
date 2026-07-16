@@ -130,12 +130,32 @@ body{
 }
 
 .corpo_produto{
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #969EA7;
+    width:100%;
+}
+
+.img_produto{
+    width:800px;
+    height:415px;
+    border:2px black solid;
+    border-radius: 10px;
+    margin-top: 10%;
 }
 .desc_produto{
+    display:flex;
+    flex-direction: column-reverse;
     max-width: 400px;
+    text-align: center;
+    font-size: 22px;
+    border:2px black solid;
+    border-radius: 10px;
+    margin-top: 10%;
+    
+}
+.preco{
+    color:red;
 }
 
 /*Portifolio cabeçalho*/
@@ -191,12 +211,12 @@ body{
     font-size: 40px
 }
 
-/*
-
-
-
-
-
+.hamburger{
+    display:none;
+}
+#checkbox_toggle{
+    display:none;
+}
 
 
 /*ATIVANDO A RESPONSIVIDADE PARA CELULAR*/
