@@ -7,15 +7,17 @@
 <!--bootstrap CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
+<!--bootstrap JS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> 
+
 <nav class="navbar">
                 <ul class="menu"> 
                     <a href="./index.html"><li><button>Inicio</button></li></a>
-                    <a href="./produtos.html"><li><button>Produtos</button></li></a>    
+                    <a href="./lista.html"><li><button>Lista</button></li></a>    
                     <a href="./contato.html"><li><button>Contatos</button></li></a>
                     <a href="./portifolio.html"><li><button>Portifolio</button></li></a>
                 </ul>
             </nav>
-
 
 <title>"Cadastro"</title>
 </head>
@@ -24,14 +26,30 @@
     <div class="container-TC">
 
         <h2 class="texto-cadastro">Cadastro</h2>
-        <form>
+        
+<form>
 
 <div class="mb-3">
  
+    <label for="Nome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="Nome" placeholder="Digite seu nome">
+
 </div>
 
+<div class="mb-3">
+
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="Email" placeholder="Exemplo@gmail.com">
+
+</div>
+
+<div class="mb-3">
+
+    <label for="Senha" class="for-label">Senha</label>
+    <input type="text" class="form-control" id="Senha" placeholder="Insira sua senha">
 
 
+</div>
         </form>
     </div>
 </body>
