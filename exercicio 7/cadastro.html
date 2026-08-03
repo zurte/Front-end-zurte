@@ -9,14 +9,28 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="menu"> 
-            <a href="./index.html"><li><button>Inicio</button></li></a>
-            <a href="./lista.html"><li><button>Lista</button></li></a>    
-            <a href="./contato.html"><li><button>Contatos</button></li></a>
-            <a href="./portifolio.html"><li><button>Portifolio</button></li></a>
-        </ul>
-    </nav>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./cadastro.html">Cadastro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lista.html">Lista</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Ínicio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <title>"Cadastro"</title>
     <div class="container-TC">
@@ -44,6 +58,7 @@
     <label for="Senha" class="for-label">Senha</label>
     <input type="text" class="form-control" id="Senha" placeholder="Insira sua senha">
 
+    <button type="button" class="btn btn-primary">Cadastrar</button>
 
 </div>
     </form>

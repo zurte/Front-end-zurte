@@ -1,0 +1,1 @@
+O objetivo desse sistema é uma biblioteca de item variados aonde será possível se cadastrar e ver os itens que estão no site
