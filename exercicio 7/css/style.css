@@ -1,5 +1,5 @@
-@media (min-width: 576px){
+@media (min-width: 769px) and (max-width:1024){
     #body{
-        justify-content:center
+        justify-content:center;
     }
 }
