@@ -1,4 +1,4 @@
-const formulario = document.getElementById("enviar");
+const formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -29,6 +29,8 @@ formulario.addEventListener("submit", (event) => {
         console.log(produtos);
 
     });
+
+      mostrarProdutos();
 
 const produtos = [
     {
@@ -106,4 +108,4 @@ produtos.forEach(produto => {
 });
 }
 
-mostrarProdutos();
+
