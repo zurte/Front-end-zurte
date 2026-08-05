@@ -34,12 +34,14 @@
   </div>
 </nav>
 
+<section class="Cadastre">
+
 <title>"Cadastro"</title>
     <div class="container-TC">
 
         <h2 class="texto-cadastro">Cadastro</h2>
         
-    <form>
+    <form id="formulario">
 
 <div class="mb-3">
  
@@ -80,10 +82,25 @@
 <label for="Status" class="form-label">Status</label>
 <input type="text" class="form-control" id="status" placeholder="Status do produto">
 
- <button type="button" class="btn btn-primary">Cadastrar</button>
+ <button type="submit" id="enviar" class="btn btn-primary">Cadastrar</button>
 </div>
     </form>
 </div>
-    <!--bootstrap JS-->
+
+</section>
+
+<section class="lista">
+    
+
+ <div id="listaProdutos"></div>
+ 
+ 
+<script src="./js7/script7.js"></script>
+
+</section>
+
+<!--bootstrap JS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> 
+  
+    <script src="./js7/script7.js" defer></script>
 </body>

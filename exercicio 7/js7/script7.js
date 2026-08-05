@@ -1,44 +1,44 @@
-const formulario = document.GetElementById("formCadastro")
+const formulario = document.getElementById("enviar");
 
-formulario.addEventListener("submit", function (event) {
-    event.preventDefault();
+formulario.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-    console.log("Formulario enviado");
+        console.log("Formulario enviado");
 
-    const nome = document.GetElementById("nome").value;
-    const preco = document.GetElementById("preco").value;
-    const imagem = document.GetElementById("imagem").value;
-    const descricao = document.GetElementById("descricao").value;
-    const categoria = document.GetElementById("categoria").value;
-    const estoque = document.GetElementById("estoque").value;
-    const status = document.GetElementById("status").value;
+        const nome = document.getElementById("nome").value;
+        const preco = document.getElementById("preco").value;
+        const imagem = document.getElementById("imagem").value;
+        const descricao = document.getElementById("descricao").value;
+        const categoria = document.getElementById("categoria").value;
+        const estoque = document.getElementById("estoque").value;
+        const status = document.getElementById("status").value;
 
 
 
-const novoProduto = {
-    nome: nome,
-    preco: preco,
-    imagem: imagem,
-    descricao: descricao,
-    categoria: categoria,
-    estoque: estoque,
-    status: status
-};
+        const novoProduto = {
+            nome: nome,
+            preco: preco,
+            imagem: imagem,
+            descricao: descricao,
+            categoria: categoria,
+            estoque: estoque,
+            status: status
+        };
 
-produtos.push(novoProduto);
-console.log(produtos);
+        produtos.push(novoProduto);
+        console.log(produtos);
 
-});
+    });
 
 const produtos = [
     {
         nome: "chinelo quadradis",
         preco: "$20,00",
-        imagem: "fsdfdssff",
+        imagem: "./img/bob.jpg",
         descricao: "Chinelo quadradis",
-        categoria: "",
-        estoque: "",
-        status: "",
+        categoria: "ropa",
+        estoque: "3",
+        status: "Ativo",
         
     },
         
@@ -82,7 +82,7 @@ const produtos = [
         status: "",        
     }
 ];
-const listaProdutos = document.GetElementById("listaProdutos");
+const listaProdutos = document.getElementById("listaProdutos");
 
 function mostrarProdutos() {
 
@@ -91,10 +91,14 @@ function mostrarProdutos() {
 produtos.forEach(produto => {
     listaProdutos.innerHTML += `
     <div class="card" style="width: 18rem;">
-  <img src="${produtos.imagem}" class="card-img-top" alt="${produtos.nome}">
+  <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
   <div class="card-body">
-    <h5 class="card-title">${produtos.nome}</h5>
-    <p class="card-text">${produtos.descricao}</p>
+    <h5 class="card-title">${produto.nome}</h5>
+    <h4 class="card-text">${produto.preco}</h4>
+    <p class="card-text">${produto.descricao}</p>
+    <p class="card-text">${produto.categoria}</p>
+    <p class="card-text">${produto.estoque}</p>
+    <p class="card-text">${produto.status}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
