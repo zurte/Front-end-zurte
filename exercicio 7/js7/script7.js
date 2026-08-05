@@ -1,9 +1,44 @@
+const formulario = document.GetElementById("formCadastro")
+
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    console.log("Formulario enviado");
+
+    const nome = document.GetElementById("nome").value;
+    const preco = document.GetElementById("preco").value;
+    const imagem = document.GetElementById("imagem").value;
+    const descricao = document.GetElementById("descricao").value;
+    const categoria = document.GetElementById("categoria").value;
+    const estoque = document.GetElementById("estoque").value;
+    const status = document.GetElementById("status").value;
+
+
+
+const novoProduto = {
+    nome: nome,
+    preco: preco,
+    imagem: imagem,
+    descricao: descricao,
+    categoria: categoria,
+    estoque: estoque,
+    status: status
+};
+
+produtos.push(novoProduto);
+console.log(produtos);
+
+});
+
 const produtos = [
     {
         nome: "chinelo quadradis",
         preco: "$20,00",
         imagem: "fsdfdssff",
         descricao: "Chinelo quadradis",
+        categoria: "",
+        estoque: "",
+        status: "",
         
     },
         
@@ -12,6 +47,9 @@ const produtos = [
         preco: "$5,00",
         imagem: "fsfdssdf",
         descricao: "O classic miojis né",
+        categoria: "",
+        estoque: "",
+        status: "",
     },
 
     {
@@ -19,6 +57,9 @@ const produtos = [
         preco: "$15,00",
         imagem: "fdsfssdf",
         descricao: "É uma jarra",
+        categoria: "",
+        estoque: "",
+        status: "",
     },
  
     {
@@ -26,6 +67,9 @@ const produtos = [
         preco: "$30,00",
         imagem: "sdfsdfsdf",
         descricao: "Essa camisa é boladex e vale a pena comprar",
+        categoria: "",
+        estoque: "",
+        status: "",
     },    
 
     {
@@ -33,11 +77,18 @@ const produtos = [
         preco: "$10,00",
         imagem: "sdfsdfe",
         descricao: "Esse anime é bolado",
+        categoria: "",
+        estoque: "",
+        status: "",        
     }
 ];
-const listaProdutos = document.getElementById("listaProdutos");
+const listaProdutos = document.GetElementById("listaProdutos");
 
-produtos.forEach(produtos => {
+function mostrarProdutos() {
+
+    listaProdutos.innerHTML = ""; 
+
+produtos.forEach(produto => {
     listaProdutos.innerHTML += `
     <div class="card" style="width: 18rem;">
   <img src="${produtos.imagem}" class="card-img-top" alt="${produtos.nome}">
@@ -49,5 +100,6 @@ produtos.forEach(produtos => {
 </div>
 `;
 });
+}
 
-console.log("JS carregado!");
+mostrarProdutos();
