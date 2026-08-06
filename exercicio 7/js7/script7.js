@@ -16,7 +16,7 @@ const produtos = [
     {    
         nome: "Miojo",
         preco: 5,
-        imagem: "/img/Miojo.jpg",
+        imagem: "/img/miojo.jpg",
         descricao: "O classic miojis né",
         categoria: "Comida",
         estoque: 5,
@@ -26,7 +26,7 @@ const produtos = [
     {
         nome:  "Jarra",
         preco: 15,
-        imagem: "/img/A jarra.jpg",
+        imagem: "/img/jarra.jpg",
         descricao: "É uma jarra",
         categoria: "Objeto",
         estoque: 20,
@@ -46,7 +46,7 @@ const produtos = [
     {
         nome: "Mangá de bleach",
         preco: 10,
-        imagem: "/img/Bleach_vol._01.jpg",
+        imagem: "/img/bleach.jpg",
         descricao: "Esse anime é bolado",
         categoria: "Livro",
         estoque: 50 ,
@@ -74,7 +74,7 @@ produtos.forEach(produto => {
 
             <p><strong>Categoria:</strong> ${produto.categoria}</p>
 
-            <p><strong>Estoque:</strong> ${produto.estoqueto.LocaleString("pt-BR", {style: "currency",currency: "BRL"})}}</p>
+            <p><strong>Estoque:</strong> ${produto.estoqueto}</p>
 
             <p><strong>Status:</strong> ${produto.status}</p>
 
