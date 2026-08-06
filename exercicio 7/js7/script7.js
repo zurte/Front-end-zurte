@@ -60,16 +60,27 @@ function mostrarProdutos() {
 
 produtos.forEach(produto => {
     listaProdutos.innerHTML += `
-    <div class="card" style="width: 18rem;">
-  <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
-  <div class="card-body">
-    <h5 class="card-title">${produto.nome}</h5>
-    <h4 class="card-text">${produto.preco.toLocaleString("pt-BR", {style: "currency", currency: "BRL" })}}</h4>
-    <p class="card-text">${produto.descricao}</p>
-    <p class="card-text">${produto.categoria}</p>
-    <p class="card-text">${produto.estoque.toLocaleString("pt-BR", {style: "currency", currency: "BRL" })}}}</p>
-    <p class="card-text">${produto.status}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+    <div class="card h-100">
+   <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
+        <div class="card-body">
+            <h5 class="card-title">${produto.nome}</h5>
+
+            <h4 class="text-success">
+
+            ${produto.preco.toLocaleString("pt-BR", {style: "currency",currency: "BRL"})}</h4>
+
+            <p class="card-text">${produto.descricao}</p>
+
+            <p><strong>Categoria:</strong> ${produto.categoria}</p>
+
+            <p><strong>Estoque:</strong> ${produto.estoqueto.LocaleString("pt-BR", {style: "currency",currency: "BRL"})}}</p>
+
+            <p><strong>Status:</strong> ${produto.status}</p>
+
+            <a href="#" class="btn btn-primary">
+                Comprar
+            </a>
   </div>
 </div>
 `;
