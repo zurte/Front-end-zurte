@@ -1,4 +1,80 @@
 const formulario = document.getElementById("formulario");
+const listaProdutos = document.getElementById("listaProdutos");
+
+const produtos = [
+    {
+        nome: "chinelo quadradis",
+        preco: 20,
+        imagem: "./img/bob.jpg",
+        descricao: "Chinelo quadradis",
+        categoria: "ropa",
+        estoque: 3,
+        status: "Ativo",
+        
+    },
+        
+    {    
+        nome: "Miojo",
+        preco: 5,
+        imagem: "/img/Miojo.jpg",
+        descricao: "O classic miojis né",
+        categoria: "Comida",
+        estoque: 5,
+        status: "Ativo",
+    },
+
+    {
+        nome:  "Jarra",
+        preco: 15,
+        imagem: "/img/A jarra.jpg",
+        descricao: "É uma jarra",
+        categoria: "Objeto",
+        estoque: 20,
+        status: "Ativo",
+    },
+ 
+    {
+        nome:  "Camisa do space jam",
+        preco: 30,
+        imagem: "/img/spacejam.jpg",
+        descricao: "Essa camisa é boladex e vale a pena comprar",
+        categoria: "Roupa",
+        estoque: 0,
+        status: "Desligado",
+    },    
+
+    {
+        nome: "Mangá de bleach",
+        preco: 10,
+        imagem: "/img/Bleach_vol._01.jpg",
+        descricao: "Esse anime é bolado",
+        categoria: "Livro",
+        estoque: 50 ,
+        status: "Ativo",        
+    }
+];
+
+function mostrarProdutos() {
+
+    listaProdutos.innerHTML = ""; 
+
+produtos.forEach(produto => {
+    listaProdutos.innerHTML += `
+    <div class="card" style="width: 18rem;">
+  <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
+  <div class="card-body">
+    <h5 class="card-title">${produto.nome}</h5>
+    <h4 class="card-text">${produto.preco.toLocaleString("pt-BR", {style: "currency", currency: "BRL" })}}</h4>
+    <p class="card-text">${produto.descricao}</p>
+    <p class="card-text">${produto.categoria}</p>
+    <p class="card-text">${produto.estoque.toLocaleString("pt-BR", {style: "currency", currency: "BRL" })}}}</p>
+    <p class="card-text">${produto.status}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+`;
+});
+}
 
 formulario.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -27,85 +103,7 @@ formulario.addEventListener("submit", (event) => {
 
         produtos.push(novoProduto);
         console.log(produtos);
-
+        mostrarProdutos();
     });
 
       mostrarProdutos();
-
-const produtos = [
-    {
-        nome: "chinelo quadradis",
-        preco: "$20,00",
-        imagem: "./img/bob.jpg",
-        descricao: "Chinelo quadradis",
-        categoria: "ropa",
-        estoque: "3",
-        status: "Ativo",
-        
-    },
-        
-    {    
-        nome: "Miojo",
-        preco: "$5,00",
-        imagem: "fsfdssdf",
-        descricao: "O classic miojis né",
-        categoria: "",
-        estoque: "",
-        status: "",
-    },
-
-    {
-        nome:  "Jarra",
-        preco: "$15,00",
-        imagem: "fdsfssdf",
-        descricao: "É uma jarra",
-        categoria: "",
-        estoque: "",
-        status: "",
-    },
- 
-    {
-        nome:  "Camisa do space jam",
-        preco: "$30,00",
-        imagem: "sdfsdfsdf",
-        descricao: "Essa camisa é boladex e vale a pena comprar",
-        categoria: "",
-        estoque: "",
-        status: "",
-    },    
-
-    {
-        nome: "Mangá de bleach",
-        preco: "$10,00",
-        imagem: "sdfsdfe",
-        descricao: "Esse anime é bolado",
-        categoria: "",
-        estoque: "",
-        status: "",        
-    }
-];
-const listaProdutos = document.getElementById("listaProdutos");
-
-function mostrarProdutos() {
-
-    listaProdutos.innerHTML = ""; 
-
-produtos.forEach(produto => {
-    listaProdutos.innerHTML += `
-    <div class="card" style="width: 18rem;">
-  <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
-  <div class="card-body">
-    <h5 class="card-title">${produto.nome}</h5>
-    <h4 class="card-text">${produto.preco}</h4>
-    <p class="card-text">${produto.descricao}</p>
-    <p class="card-text">${produto.categoria}</p>
-    <p class="card-text">${produto.estoque}</p>
-    <p class="card-text">${produto.status}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-`;
-});
-}
-
-
