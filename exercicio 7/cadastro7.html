@@ -93,14 +93,57 @@
 </div>
 
 </section>
-
-<section class="listaProdutos">
-    
+   
 <div class="container mt-4">
  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="listaProdutos">
 </div>
 
 </section>
+
+<section>
+<input
+ 
+    type="text" 
+    class="form-control mb-3" 
+    id="busca" 
+    placeholder="Buscar produto pelo nome"
+>
+</section>
+
+<div class="row mb-4">
+
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5>Total de Produtos</h5>
+                <h2 id="totalProdutos">0</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5>Produtos Ativos</h5>
+                <h2 id="produtosAtivos">0</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5>Valor Estimado</h5>
+                <h2 id="valorTotal">R$ 0,00</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="listaProdutos"></div>
 
 <!--bootstrap JS-->
     <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
