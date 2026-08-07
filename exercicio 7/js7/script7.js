@@ -60,6 +60,29 @@ const produtos = [
     }
 ];
 
+function salvarProdutos() {
+
+    localStorage.setItem("produtos", JSON.stringify(produtos));
+
+}
+
+
+function carregarProdutos() {
+
+    const produtosSalvos = localStorage.getItem("produtos");
+
+    if (produtosSalvos) {
+
+        produtos.push(...JSON.parse(produtosSalvos));
+
+    } else {
+
+       salvarProdutos();
+
+    }
+
+}
+
 function mostrarProdutos(lista) {
 
     listaProdutos.innerHTML = ""; 
@@ -132,6 +155,8 @@ const indice = produtos.findIndex(produto => produto.id === id);
 
         produtos.splice(indice, 1);
 
+        salvarProdutos();
+
         mostrarProdutos(produtos);
 
         atualizarResumo();
@@ -150,6 +175,12 @@ const produto = produtos.find(produto => produto.id === id);
     document.getElementById("categoria").value = produto.categoria;
     document.getElementById("estoque").value = produto.estoque;
     document.getElementById("status").value = produto.status;   
+
+    salvarProdutos();
+
+    mostrarProdutos(produtos);
+
+    atualizarResumo();
 }
 
 formulario.addEventListener("submit", (event) => {
@@ -179,13 +210,15 @@ formulario.addEventListener("submit", (event) => {
         };
 
         produtos.push(novoProduto);
+        salvarProdutos();
+        mostrarProdutos(produtos);
         atualizarResumo();
         formulario.reset();
         console.log(produtos);
-        mostrarProdutos(produtos);
         alert("Sucesso ao cadastrar")
     });
 
+      carregarProdutos();
       mostrarProdutos(produtos);
       atualizarResumo();
 
